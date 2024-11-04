@@ -1,431 +1,516 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js ss-preload" lang="en">
   <head>
-    <!-- Basic Meta Tags for SEO -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8" />
+    <title>George Ongoro - Software Developer in Kenya</title>
     <meta
       name="description"
-      content="George Ongoro's portfolio - Software Developer specialising in Android, Windows, iOS, and Mac development. Explore my projects, skills and contact information."
+      content="Explore the work of George Ongoro, a versatile software developer in Kenya with expertise in Windows and Android applications, including GSCapture, PlayVids, and more."
     />
     <meta
       name="keywords"
-      content="George Ongoro, portfolio, software developer, software engineer, Android development, Windows apps, iOS, Mac, web developer, Neon Tek, projects, CSharp, Java, PHP, Python, C++"
+      content="George Ongoro, Software Developer, Kenya, GSCapture, Best Color Picker, PlayVids, Windows apps, Android development, Neon Tek"
     />
     <meta name="author" content="George Ongoro" />
-    <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph Meta Tags for Social Media Preview -->
-    <meta
-      property="og:title"
-      content="George Ongoro - Full-Stack Software Developer"
-    />
-    <meta
-      property="og:description"
-      content="Explore the portfolio of George Ongoro, a software developer specializing in Android, Windows, iOS, and Mac development."
-    />
-    <meta
-      property="og:image"
-      content="https://georgeongoro.vercel.app/assets/image.jpg"
-    />
-    <meta property="og:url" content="https://georgeongoro.vercel.app" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Twitter Card Meta Tags for Social Sharing -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="George Ongoro - Full-Stack Software Developer"
-    />
-    <meta
-      name="twitter:description"
-      content="Check out the projects and skills of George Ongoro, a software developer with expertise in mobile and desktop platforms."
-    />
-    <meta
-      name="twitter:image"
-      content="https://georgeongoro.vercel.app/assets/image.jpg"
-    />
-    <meta name="twitter:url" content="https://georgeongoro.vercel.app" />
-    <meta name="twitter:creator" content="@g_ongoro04" />
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- Structured Data Markup (Schema.org for search engines) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "George Ongoro",
-        "jobTitle": "Software Developer",
-        "url": "https://georgeongoro.vercel.app",
-        "sameAs": [
-          "https://www.linkedin.com/in/georgeongoro",
-          "https://github.com/Joojmusic",
-          "https://twitter.com/g_ongoro04"
-        ],
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Neon Tek"
-        },
-        "alumniOf": {
-          "@type": "EducationalOrganization",
-          "name": "Saint Joseph Technical Secondary School"
-        },
-        "knowsAbout": [
-          "C#",
-          "Java",
-          "PHP",
-          "Python",
-          "C++",
-          "Android Development",
-          "iOS Development",
-          "Web Development"
-        ]
-      }
-    </script>
-
-    <title>Full-stack Software Developer in Kenya - George Ongoro</title>
-
-    <!-- Link to CSS Files -->
-    <link rel="stylesheet" href="../../css/portfolio.css" />
-    <link
-      rel="stylesheet"
-      href="../../assets/fontawesome/css/fontawesome.css"
-    />
-    <link rel="stylesheet" href="../../assets/fontawesome/css/brands.css" />
-    <link rel="stylesheet" href="../../assets/fontawesome/css/solid.css" />
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
   </head>
 
-  <body>
-    <div class="body_container">
-      <nav>
-        <div class="menu_bars" id="menu_bars">
-          <i class="fa-solid fa-bars"></i>
+  <body id="top">
+    <!-- # preloader
+    ================================================== -->
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+
+    <!-- # page wrap
+    ================================================== -->
+    <div class="s-pagewrap">
+      <div class="circles">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- ## site header 
+        ================================================== -->
+      <header class="s-header">
+        <div class="header-mobile">
+          <span class="mobile-home-link"><a href="index.html">George.</a></span>
+          <a class="mobile-menu-toggle" href="#0"><span>Menu</span></a>
         </div>
 
-        <ul class="nav_list" id="nav_menu">
-          <li class="list_item">
-            <a href="../../index.html" class="nav_link">Landing Page</a>
-          </li>
+        <div class="row wide main-nav-wrap">
+          <nav class="column lg-12 main-nav">
+            <ul>
+              <li><a href="../../index.html" class="home-link">George.</a></li>
+              <li class="current">
+                <a href="#intro" class="smoothscroll">Intro</a>
+              </li>
+              <li><a href="#about" class="smoothscroll">About</a></li>
+              <li><a href="#works" class="smoothscroll">Works</a></li>
+              <li><a href="#contact" class="smoothscroll">Say Hello</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- end s-header -->
 
-          <li class="list_item">
-            <a href="#" class="nav_link">My Blogs</a>
-          </li>
+      <!-- ## main content
+        ==================================================- -->
+      <main class="s-content">
+        <!-- ### intro
+            ================================================== -->
+        <section id="intro" class="s-intro target-section">
+          <div class="row intro-content wide">
+            <div class="column">
+              <div class="text-pretitle with-line">George Ongoro</div>
 
-          <li class="list_item">
-            <a href="#" class="nav_link">About Me</a>
-          </li>
+              <h1 class="text-huge-title">
+                Hi, I'm George,<br />
+                a passionate <br />
+                full-stack <br />
+                software developer based <br />
+                in Nairobi, Kenya.
+              </h1>
+            </div>
 
-          <li class="list_item">
-            <a href="#contact" class="nav_link">Contact Me</a>
-          </li>
-
-          <div class="menu_x" id="menu_x">
-            <i class="fa-solid fa-x"></i>
+            <ul class="intro-social">
+              <li><a href="https://github.com/004Ongoro">Github</a></li>
+              <li><a href="https://twitter.com/g_ongoro04">Twitter</a></li>
+            </ul>
           </div>
-        </ul>
-      </nav>
+          <!-- end intro content -->
 
-      <main>
-        <section class="home_section section">
-          <header class="section_header">
-            <h2>HOME</h2>
-          </header>
-          <div class="home_summary">
-            <p>
-              <b class="headline_home"
-                >Passionate Software Developer Crafting Innovative Solutions
-                <br
-              /></b>
-              I specialise in building intuitive high performing applications
-              across platforms — whether its mobile, web, or desktop. With a
-              love for problem-solving and keen eyefor detail, I creaute
-              software that blends functionality with aesthetics. Lets
-              collaborate and turn your ideas into a reality.
-            </p>
-          </div>
-
-          <div class="element_container home_btns">
-            <a href="#contact" class="btn home_btn">Contact Me</a>
-            <a href="#" class="btn home_btn">Get my Resume</a>
-          </div>
+          <a href="#about" class="intro-scrolldown smoothscroll">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z"
+              />
+            </svg>
+          </a>
         </section>
+        <!-- end s-intro -->
 
-        <section class="section skills_section">
-          <header class="section_header">
-            <h2>SKILLS</h2>
-          </header>
-
-          <div class="skills_container">
-            <div class="skills">
-              <h3>Web Development</h3>
-              <div class="skill_section">
-                <article class="skill">
-                  <i class="fa-brands fa-html5"></i>
-                  <p>HTML5</p>
-                </article>
-                <article class="skill">
-                  <i class="fa-brands fa-css3"></i>
-                  <p>CSS3</p>
-                </article>
-                <article class="skill">
-                  <i class="fa-brands fa-js"></i>
-                  <p>Javascript</p>
-                </article>
-                <article class="skill">
-                  <i class="fa-brands fa-react"></i>
-                  <p>React Js</p>
-                </article>
-              </div>
-
-              <a href="#" class="view_more">Learn more</a>
-            </div>
-            <div class="skills">
-              <h3>Software Development</h3>
-              <div class="skill_section">
-                <article class="skill">
-                  <i class="fa-regular fa-code"></i>
-                  <p>C#</p>
-                </article>
-                <article class="skill">
-                  <i class="fa-brands fa-java"></i>
-                  <p>Java</p>
-                </article>
-                <article class="skill">
-                  <i class="fa-solid fa-code"></i>
-                  <p>C++</p>
-                </article>
-                <article class="skill">
-                  <i class="fa-brands fa-react"></i>
-                  <p>React Native</p>
-                </article>
-              </div>
-
-              <a href="#" class="view_more">Learn more</a>
-            </div>
-            <div class="skills">
-              <h3>Web Development</h3>
-              <div class="skill_section">
-                <article class="skill">
-                  <i class="fa-brands fa-html5"></i>
-                  <p>HTML5</p>
-                </article>
-                <article class="skill">
-                  <i class="fa-brands fa-css3"></i>
-                  <p>CSS3</p>
-                </article>
-                <article class="skill">
-                  <i class="fa-brands fa-js"></i>
-                  <p>Javascript</p>
-                </article>
-                <article class="skill">
-                  <i class="fa-brands fa-react"></i>
-                  <p>React Js</p>
-                </article>
-              </div>
-
-              <a href="#" class="view_more">Learn more</a>
-            </div>
-          </div>
-        </section>
-
-        <section class="section project_section">
-          <header class="section_header">
-            <h2>PROJECTS</h2>
-          </header>
-
-          <div class="project_container">
-            <article class="template project" style="display: none">
+        <!-- ### about
+            ================================================== -->
+        <section id="about" class="s-about target-section">
+          <div class="row about-info wide" data-animate-block>
+            <div class="column lg-6 md-12 about-info__pic-block">
               <img
-                src=""
-                alt="Project visual screenshot"
-                class="project_perfil"
+                src="images/avatars/user-01.jpg"
+                srcset="images/about-photo.jpg 1x, images/about-photo@2x.jpg 2x"
+                alt="George Ongoro - Software Developer"
+                class="about-info__pic"
+                data-animate-el
               />
-              <h3></h3>
-              <p></p>
-              <div class="technologies">
-                <i class="fa-brands fa-java"></i>
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-react"></i>
-              </div>
+            </div>
 
-              <div class="proj_bottom">
-                <a href="#" target="_blank" class="learn_more">Learn More</a>
+            <div class="column lg-6 md-12">
+              <div class="about-info__text">
+                <h2 class="text-pretitle with-line" data-animate-el>About</h2>
+                <p class="attention-getter" data-animate-el>
+                  I'm George Ongoro, a self-taught software developer with a
+                  strong focus on Windows and Android applications. With a knack
+                  for solving complex problems, I have developed projects that
+                  span across audio, image, and video processing applications.
+                </p>
+                <a href="#0" class="btn btn--medium u-fullwidth" data-animate-el
+                  >Download CV</a
+                >
               </div>
-              <div class="new_label">
-                <p>New</p>
-              </div>
-            </article>
-
-            <div class="project_details">
-              <div>
-                <h3 class="det_title"></h3>
-                <hr />
-                <div class="desc_container">
-                  <p class="det_description"></p>
-                </div>
-                <hr />
-                <div class="proj_links">
-                  <a href="#" class="github_link">Github</a>
-                  <a href="#" class="github_link">Download</a>
-                </div>
-              </div>
-              <i class="fa-solid fa-x" id="proj_modal_close"></i>
             </div>
           </div>
-        </section>
+          <!-- about-info -->
 
-        <section class="section contact_section" id="contact">
-          <header class="section_header">
-            <h2>CONTACT</h2>
-          </header>
-          <div class="contact_container container">
-            <form action="#" class="form" method="POST">
-              <input
-                name="fullname"
-                type="text"
-                class="text_input"
-                placeholder="Fullname*"
-                autocomplete="off"
-                required
-              />
+          <div class="row about-expertise" data-animate-block>
+            <div class="column lg-12">
+              <h2 class="text-pretitle" data-animate-el>Expertise</h2>
 
-              <input
-                name="email_address"
-                type="email"
-                class="text_input"
-                placeholder="Email Address*"
-                autocomplete="off"
-                required
-              />
-
-              <textarea
-                name="message_text"
-                required
-                id="txt_message"
-                placeholder="Your message(Describe in more than 100 words.)"
-              ></textarea>
-
-              <button type="submit" class="btn submit_btn">Submit</button>
-            </form>
+              <ul class="skills-list h1" data-animate-el>
+                <li>Software Development</li>
+                <li>Full-stack Development</li>
+                <li>Image Processing</li>
+                <li>Android Development</li>
+                <li>Windows Applications</li>
+                <li>Database Management</li>
+              </ul>
+            </div>
           </div>
+          <!-- end about-expertise -->
+
+          <div class="row about-timelines" data-animate-block>
+            <div class="column lg-6 tab-12">
+              <h2 class="text-pretitle" data-animate-el>Experience</h2>
+
+              <div class="timeline" data-animate-el>
+                <div class="timeline__block">
+                  <div class="timeline__bullet"></div>
+                  <div class="timeline__header">
+                    <h4 class="timeline__title">Freelance Developer</h4>
+                    <h5 class="timeline__meta">Self-Employed</h5>
+                    <p class="timeline__timeframe">2022 - Present</p>
+                  </div>
+                  <div class="timeline__desc">
+                    <p>
+                      As a freelance developer, I specialize in creating dynamic
+                      applications and providing solutions in audio, video, and
+                      image processing. I've worked on numerous personal
+                      projects and client projects that required innovation and
+                      precision.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end timeline -->
+            </div>
+            <!-- end column -->
+
+            <div class="column lg-6 tab-12">
+              <h2 class="text-pretitle" data-animate-el>Education</h2>
+
+              <div class="timeline" data-animate-el>
+                <div class="timeline__block">
+                  <div class="timeline__bullet"></div>
+                  <div class="timeline__header">
+                    <h4 class="timeline__title">
+                      Saint Joseph Technical Secondary School
+                    </h4>
+                    <h5 class="timeline__meta">High School Diploma</h5>
+                    <p class="timeline__timeframe">Completed 2023</p>
+                  </div>
+                  <div class="timeline__desc">
+                    <p>
+                      Graduated with strong foundations in computer studies,
+                      excelling in programming and technology-related subjects.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end timeline -->
+            </div>
+            <!-- end column -->
+          </div>
+          <!-- end about-timelines -->
         </section>
+        <!-- end s-about -->
+
+        <!-- ### works
+            ================================================== -->
+        <section id="works" class="s-works target-section">
+          <div class="row works-portfolio">
+            <div class="column lg-12" data-animate-block>
+              <h2 class="text-pretitle" data-animate-el>Recent Works</h2>
+              <p class="h1" data-animate-el>
+                Here are some of my favorite projects. Feel free to check them
+                out.
+              </p>
+
+              <ul class="folio-list row block-lg-one-half block-stack-on-1000">
+                <li class="folio-list__item column" data-animate-el>
+                  <a class="folio-list__item-link" href="#modal-01">
+                    <div class="folio-list__item-pic">
+                      <img
+                        src="images/portfolio/GsCapture.png"
+                        alt="GSCapture Screenshot Tool"
+                      />
+                    </div>
+                    <div class="folio-list__item-text">
+                      <div class="folio-list__item-cat">Software</div>
+                      <div class="folio-list__item-title">GSCapture</div>
+                    </div>
+                  </a>
+                </li>
+                <!--end folio-list__item -->
+
+                <li class="folio-list__item column" data-animate-el>
+                  <a class="folio-list__item-link" href="#modal-02">
+                    <div class="folio-list__item-pic">
+                      <img
+                        src="images/portfolio/BCPicker.png"
+                        alt="Best Color Picker"
+                      />
+                    </div>
+                    <div class="folio-list__item-text">
+                      <div class="folio-list__item-cat">Tool</div>
+                      <div class="folio-list__item-title">
+                        Best Color Picker
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!--end folio-list__item -->
+
+                <li class="folio-list__item column" data-animate-el>
+                  <a class="folio-list__item-link" href="#modal-03">
+                    <div class="folio-list__item-pic">
+                      <img
+                        src="images/portfolio/fuji.jpg"
+                        alt="PlayVids Video Player"
+                      />
+                    </div>
+                    <div class="folio-list__item-text">
+                      <div class="folio-list__item-cat">Mobile App</div>
+                      <div class="folio-list__item-title">PlayVids</div>
+                    </div>
+                  </a>
+                </li>
+                <!--end folio-list__item -->
+
+                <li class="folio-list__item column" data-animate-el>
+                  <a class="folio-list__item-link" href="#modal-04">
+                    <div class="folio-list__item-pic">
+                      <img
+                        src="images/portfolio/Notepad.png"
+                        alt="Gel Lists Note and To-do App"
+                      />
+                    </div>
+                    <div class="folio-list__item-text">
+                      <div class="folio-list__item-cat">Productivity</div>
+                      <div class="folio-list__item-title">Gel Lists</div>
+                    </div>
+                  </a>
+                </li>
+                <!--end folio-list__item -->
+              </ul>
+              <!-- end folio-list -->
+            </div>
+            <!-- end column -->
+
+            <!-- Modal Templates Popup
+                -------------------------------------------- -->
+            <div id="modal-01" hidden>
+              <div class="modal-popup">
+                <img
+                  src="images/portfolio/gallery/GsCapture.png"
+                  alt="GSCapture Screenshot Tool"
+                />
+
+                <div class="modal-popup__desc">
+                  <h5>GSCapture</h5>
+                  <p>
+                    GSCapture is a powerful screenshot and screen recording tool
+                    tailored for Windows. It allows users to capture the entire
+                    screen, specific windows, or selected areas with ease.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Software</li>
+                    <li>Tool</li>
+                  </ul>
+
+                  <a
+                    href="https://www.github.com/004Ongoro/GSCapture"
+                    class="modal-popup__details"
+                    >Project link</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end modal -->
+
+            <div id="modal-02" hidden>
+              <div class="modal-popup">
+                <img
+                  src="images/portfolio/gallery/BCPicker.png"
+                  alt="Best Color Picker Tool"
+                />
+
+                <div class="modal-popup__desc">
+                  <h5>Best Color Picker</h5>
+                  <p>
+                    Best Color Picker is a user-friendly application designed to
+                    help designers and developers pick, save, and organize
+                    colors effortlessly.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Tool</li>
+                  </ul>
+
+                  <a
+                    href="https://www.github.com/004Ongoro/BCPicker"
+                    class="modal-popup__details"
+                    >Project link</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end modal -->
+
+            <div id="modal-03" hidden>
+              <div class="modal-popup">
+                <img
+                  src="images/portfolio/gallery/g-fuji.jpg"
+                  alt="PlayVids Video Player App"
+                />
+
+                <div class="modal-popup__desc">
+                  <h5>PlayVids</h5>
+                  <p>
+                    PlayVids is a feature-rich mobile video player supporting a
+                    variety of video formats and internet streaming. With an
+                    intuitive interface, it includes playback controls for play,
+                    pause, rewind, fast-forward, and supports Picture-in-Picture
+                    (PiP) mode.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Mobile App</li>
+                    <li>Video Player</li>
+                  </ul>
+
+                  <a
+                    href="https://www.github.com/004Ongoro/PlayVids"
+                    class="modal-popup__details"
+                    >Project link</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end modal -->
+
+            <div id="modal-04" hidden>
+              <div class="modal-popup">
+                <img
+                  src="images/portfolio/gallery/Notepad.png"
+                  alt="Gel Lists - Note and To-Do App"
+                />
+
+                <div class="modal-popup__desc">
+                  <h5>Gel Lists</h5>
+                  <p>
+                    Gel Lists combines a note-taking app with a to-do list
+                    manager, designed for productivity on the go. It enables
+                    users to create organized lists, set reminders, categorize
+                    tasks, and take detailed notes.
+                  </p>
+                  <ul class="modal-popup__cat">
+                    <li>Productivity</li>
+                    <li>App</li>
+                  </ul>
+
+                  <a
+                    href="https://www.github.com/004Ongoro/Gelists"
+                    class="modal-popup__details"
+                    >Project link</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end modal -->
+          </div>
+          <!-- end works-portfolio -->
+        </section>
+        <!-- end s-works -->
+
+        <!-- ### contact
+            ================================================== -->
+        <section id="contact" class="s-contact target-section">
+          <div class="row contact-top">
+            <div class="column lg-12">
+              <h2 class="text-pretitle">Get In Touch</h2>
+
+              <p class="h1">
+                I love to hear from you. Whether you have a question or just
+                want to chat about design, tech & art — shoot me a message.
+              </p>
+            </div>
+          </div>
+          <!-- end contact-top -->
+
+          <div class="row contact-bottom">
+            <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+              <h3 class="text-pretitle">Reach me at</h3>
+              <p class="contact-links">
+                <a href="mailto:gtechong72@gmail.com" class="mailtoui"
+                  >gtechong72@gmail.com</a
+                >
+                <br />
+                <a href="tel:+254711667099">+254 711 667099</a>
+              </p>
+            </div>
+            <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+              <h3 class="text-pretitle">Social</h3>
+              <ul class="contact-social">
+                <li><a href="https://github.com/004Ongoro">Github</a></li>
+                <li><a href="https://instagram.com/Jooj_ong">Instagram</a></li>
+                <li><a href="https://wa.me/+254755359887">WhatsApp</a></li>
+                <li><a href="https://twitter.com/g_ongoro04">Twitter</a></li>
+              </ul>
+            </div>
+            <div class="column lg-4 md-12 contact-block">
+              <a
+                href="mailto:gtechong72@gmail.com"
+                class="mailtoui btn btn--medium u-fullwidth contact-btn"
+                >Say Hello.</a
+              >
+            </div>
+          </div>
+          <!-- end contact-bottom -->
+        </section>
+        <!-- end contact -->
       </main>
-    </div>
+      <!-- end s-content -->
 
-    <footer>
-      <div class="news_letter">
-        <h2>Subscribe to my <br />Newsletter</h2>
-        <p>
-          Don't miss anything, news, blogs, projects etc, you just have to tell
-          me where to send it
-        </p>
-        <form action="#" class="form">
-          <input
-            type="text"
-            class="text_input"
-            id="email_subscribe"
-            placeholder="Enter your email Address"
-          />
-          <button class="btn" type="submit" id="subscribe_btn">
-            Subscribe
-          </button>
-        </form>
-      </div>
-      <div class="footer_content">
-        <div class="footer_section section_1">
-          <h3>Useful Links</h3>
-          <ul>
-            <li class="footer_li">
-              <i class="fa-solid fa-sitemap"></i>
-              <a href="#">Visit my portfolio</a>
-            </li>
-            <li class="footer_li">
-              <i class="fa-solid fa-blog"></i>
-              <a href="#">Visit my blogs</a>
-            </li>
-            <li class="footer_li">
-              <i class="fa-solid fa-question"></i>
-              <a href="#">FAQs</a>
-            </li>
-            <li class="footer_li">
-              <i class="fa-solid fa-laptop"></i>
-              <a href="#">My recent works</a>
-            </li>
-          </ul>
+      <!-- ## footer
+        ================================================== -->
+      <footer class="s-footer">
+        <div class="row">
+          <div class="column ss-copyright">
+            <span>© Copyright 2024 George Ongoro, All rights reserved</span>
+            <span
+              >Design by
+              <a href="https://www.styleshout.com/">StyleShout</a></span
+            >
+            <span> <a href="https://www.neontek.co.ke/">Neon Tek</a></span>
+          </div>
+
+          <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path
+                  d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
-
-        <div class="footer_section section_2">
-          <h3>Let's Connect</h3>
-          <ul>
-            <li class="footer_li">
-              <i class="fa-brands fa-facebook"></i>
-              <a href="#">Facebook</a>
-            </li>
-
-            <li class="footer_li">
-              <i class="fa-brands fa-instagram"></i>
-              <a href="#">Instagram</a>
-            </li>
-
-            <li class="footer_li">
-              <i class="fa-brands fa-x-twitter"></i>
-              <a href="#">X</a>
-            </li>
-
-            <li class="footer_li">
-              <i class="fa-brands fa-whatsapp"></i>
-              <a href="#">WhatsApp</a>
-            </li>
-
-            <li class="footer_li">
-              <i class="fa-brands fa-github"></i>
-              <a href="#">Github</a>
-            </li>
-
-            <li class="footer_li">
-              <i class="fa-brands fa-telegram"></i>
-              <a href="#">Telegram</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer_copy">
-        <p>Copyright &copy; 2024 <a href="#">George Ongoro</a></p>
-        <p>All rights reserved.</p>
-      </div>
-    </footer>
-
-    <div class="cookies_modal" id="cookie_modal">
-      <div class="cookies_text">
-        <h3>Submission of Cookies!</h3>
-        <p>
-          This site uses cookies to enhance your browsing experience, analyze
-          site traffic and serve personal content. <br /><br />
-          By selecting 'Accept all cookies', you agree to our use of cookies.
-        </p>
-      </div>
-      <div class="cookies_btns element_container">
-        <button class="btn btn_cookie" id="cookie_accept">
-          Accept all cookies
-        </button>
-        <button class="btn btn_cookie" id="cookie_reject">
-          Reject cookies
-        </button>
-      </div>
+      </footer>
+      <!-- end s-footer -->
     </div>
+    <!-- end -s-pagewrap -->
 
-    <div class="message_modal" id="message_modal">
-      <div class="icon">
-        <i class="fa-solid fa-check" id="message_icon"></i>
-      </div>
-
-      <div class="message_text">
-        <p class="message" id="message_text">The message text goes here.</p>
-      </div>
-    </div>
-
-    <script src="../../js/home.js"></script>
-    <script type="module" src="../../js/main.js"></script>
-    <script src="../../js/form-home.js"></script>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

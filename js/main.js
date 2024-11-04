@@ -25,6 +25,12 @@ const renderProjects = () => {
 
     projectsContainer.appendChild(projCard);
     projCard.addEventListener("click", () => {
+      ///////////////////
+
+      ///////////////////
+
+      projectsDetailModal.style.opacity = 1;
+      // alt
       projectsDetailModal.classList.add("project_details_open");
       projectsDetailTitle.textContent = project.title;
       projectsDetailDescr.textContent = project.description;
@@ -45,6 +51,7 @@ let modalOpen = false;
 // SHOW/HIDE MODAL
 const closeModal = () => {
   projectsDetailModal.classList.remove("project_details_open");
+  //projectsDetailModal.style.opacity = 0;
 };
 
 projectsModalClose.addEventListener("click", closeModal);

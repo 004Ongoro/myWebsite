@@ -422,7 +422,7 @@ main {
   height: 100vh;
   bottom: -100%;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 0.089);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -451,6 +451,10 @@ main {
     h3 {
       text-transform: uppercase;
       margin: auto;
+    }
+
+    i {
+      color: aliceblue;
     }
   }
 

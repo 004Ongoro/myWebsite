@@ -1,46 +1,44 @@
-const express = require("express");
-const nodemailer = require("nodemailer");
+const nodeMailer = require("nodemailer");
 
-const app = express();
+// INPUT FIELDS
+const fullname = document.getElementById("txt_name");
+const email = document.getElementById("txt_email");
+const textMessage = document.getElementById("txt_message");
+const contactForm = document.getElementById("contact_form");
+const statusBox = document.querySelector(".status");
+alert("helo");
+textMessage.value = "Message is here";
 
-app.use(express.json);
-app.use(express.urlencoded({ extended: false }));
-app.use(express.static("../en"));
+const mailMarkup = `
+  <h1>Message From: ${fullname} of ${email}</h1>
+  <p>The Message <br /> ${textMessage}</p>
+`;
 
-// NODEMAILER TRANSPORTER
-
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: "gtechong72@gmail.com",
-    pass: "password",
-  },
+contactForm.addEventListener("submit", () => {
+  sendMail();
 });
 
-app.post("/send-email", (req, res) => {
-  const { name, email, message } = req.body;
+const sendMail = () => {
+  main().catch((e) => console.log(e));
+};
 
-  const mailOptions = {
-    from: email,
-    to: "gtechong72@gmail.com",
-    subject: `New Message from ${email}`,
-    text: message,
-  };
-
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.error(error);
-      return res.status(500).send("Error sending message.");
-    }
-
-    console.log("Email sent: " + info.response);
-
-    res.status(200).send("Email sent successfully");
+async function main() {
+  const transport = nodeMailer.createTransport({
+    host: "gtechong72@gmail.com",
+    port: 465,
+    secure: true,
+    auth: {
+      user: "",
+      pass: "",
+    },
   });
-});
 
-const PORT = process.env.PORT || 3000;
+  const info = await transport.sendMail({
+    from: `${fullname.value} <${email.value}>`,
+    to: "gtechong72@gmail.com",
+    subject: `New Message from ${fullname} for PORTFOLIO`,
+    html: mailMarkup,
+  });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on https://localhost:${PORT}`);
-});
+  console.log("Messsage sent: " + info.messageId);
+}
